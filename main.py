@@ -54,8 +54,7 @@ class rh_mem(ResHolder):
 
 class rh_disk(ResHolder):
     def _filename(self):
-        s = str(random.random())
-        return '~//' + s
+        return str(random.random())
     
     def bigfile(self):
         with open(self._filename(),'wb') as f:
